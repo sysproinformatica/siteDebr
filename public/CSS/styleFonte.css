@@ -1,0 +1,55 @@
+
+       
+*{
+    font-family: cmd;
+    font-size: 25px 
+}
+
+@font-face {
+font-family: cmd;
+src: url(../font/cmd.ttf) format('truetype');
+}
+
+body{
+height: 100%;
+}
+
+.line{
+    border-right: 3px solid rgba(4, 143, 14, 0.8);
+    margin-right: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes piscarCursor{
+    from{
+        border-right-color: rgba(4, 143, 14, 0.8);
+    }
+
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes escrever{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 10em;
+
+    }
+}
+
+.piscar {
+    animation: piscarCursor 400ms  steps(40) infinite normal, 
+    escrever 4s steps(40) 1s normal both;
+}
+
+.LogoSuperior{
+position: absolute;
+bottom: 0px;
+right: 0px;
+
+}

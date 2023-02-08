@@ -1,0 +1,21 @@
+{
+    "name": "mini/framework",
+
+    "require":{
+        "php": "> 5.0"
+    },
+
+    "authors":[
+        {
+        "name": "Christian Moreira"
+        }
+    ],
+    
+    "autoload":{
+        "psr-4":{
+            "App\\": "App/",
+            "MF\\": "vendor/MF/"
+        }
+    }
+
+}
